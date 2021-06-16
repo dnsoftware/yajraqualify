@@ -13,11 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', 'App\Http\Controllers\DatatableController@getbasic');
+Route::get('/datatable/basic-data', 'App\Http\Controllers\DatatableController@getbasicdata');
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/', 'App\Http\Controllers\TestController@index');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
