@@ -2,7 +2,7 @@
 $('#users-table').DataTable({
     processing: true,
     serverSide: true,
-    ajax: 'http://yajraqualify.local/datatable/basic-data',
+    ajax: '/datatable/basic-data',
     columns: [
         { data: 'id' },
         { data: 'name' },
